@@ -42,4 +42,33 @@
 </script>
 
 
+<script>
+    $(document).ready(function() {
+        const $html = $('html');
+        const $icon = $('#themeIcon');
+
+        // Load saved theme
+        let theme = localStorage.getItem('theme') || 'light';
+        setTheme(theme);
+
+        $('#themeToggle').on('click', function() {
+            theme = ($html.attr('data-bs-theme') === 'dark') ? 'light' : 'dark';
+            setTheme(theme);
+        });
+
+        function setTheme(theme) {
+            $html.attr('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+
+            if (theme === 'dark') {
+                $icon.removeClass('bi-moon-fill').addClass('bi-sun-fill');
+            } else {
+                $icon.removeClass('bi-sun-fill').addClass('bi-moon-fill');
+            }
+        }
+    });
+</script>
+
+
+
 @yield('scripts')

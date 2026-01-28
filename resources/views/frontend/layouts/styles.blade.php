@@ -1,6 +1,7 @@
 <!-- Lib -->
 <link rel="stylesheet" href="{{ asset('frontend/assets/lib/bootstrap/dist/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/lib/fontawesome/css/all.css') }}">
+<link rel="stylesheet" href="{{ asset('backend/vendor/bootstrap-icons/bootstrap-icons.css') }}">
 
 <!-- Custom Css -->
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">

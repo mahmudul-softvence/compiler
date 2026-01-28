@@ -28,6 +28,11 @@
                     </li>
                 @endforelse
 
+                <li class="nav-item ms-2">
+                    <button class="theme-buttton" id="themeToggle">
+                        <i class="bi bi-moon-fill" id="themeIcon"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
